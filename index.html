@@ -11,7 +11,7 @@
         }
 
         canvas, .text {
-            position: relative;
+            position: absolute;
             width: 100%;
             height: 100%;
             z-index: 90000;
@@ -53,10 +53,11 @@
         }
 
         img {
-            width: 500px;
-            position: absolute;
+            position: fixed;
             top: 50%;
-            height: auto;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
     </style>
 
@@ -65,8 +66,10 @@
 <BODY>
 
 <canvas id="pinkboard"></canvas>
-<img src="aretha.jpg" alt="">
+<img src="Aretha_neil2_heart.png" alt="">
+
 <script>
+
     /*
      * Settings
      */
